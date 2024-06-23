@@ -1,0 +1,172 @@
+.profile {
+  display: flex;
+  flex-direction: row;
+}
+
+.profile .profile-container {
+  width: calc(100% - 320px);
+  border-left: 0.01em solid var(--Red);
+
+  /* overflow-y: scroll;
+  scrollbar-width: none; */
+}
+
+/* Image */
+
+.profile .profile-container .profile-doc .image img {
+  display: flex;
+  width: 20%;
+  height: 10vw;
+  margin: 5% 0 0 33%;
+  border-radius: 50%;
+  background-size: contain;
+  position: relative;
+  background-color: #BE0202;
+}
+
+.profile .profile-container .profile-doc .edit {
+  display: flex;
+  width: 52vw;
+  padding-left: 40rem;
+  margin-top: -3rem;
+  position: absolute;
+  cursor: pointer;
+}
+
+.profile .profile-container .profile-doc .edit button {
+  display: flex;
+  position: absolute;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.profile .profile-container .profile-doc .edit button .upload {
+  color: var(--Red);
+  width: 15%;
+  height: 20%;
+  margin: 2% 0 0 1%;
+}
+
+/* Doctor Name */
+
+.profile .profile-container .profile-doc h4 {
+  display: flex;
+  color: #BE0202;
+  font-family: 'Roboto', sans-serif;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin: 2% 0 0 33%;
+}
+
+/* Doctor Info */
+
+.profile .profile-container .profile-doc .info h4 {
+  height: 2.652%;
+  color: #1F1F1F;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.7rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 110%;
+  margin: 2% 0 0 39%;
+}
+
+.profile .profile-container .profile-doc .info label {
+  color: #1F1F1F;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+}
+
+.profile .profile-container .profile-doc .info input {
+  display: flex;
+  width: 29%;
+  height: 3rem;
+  border: 0.12rem solid var(--Red);
+  border-radius: 0.6rem;
+  padding: 1.4rem;
+  margin-top: 1rem;
+}
+
+/* Section Inputs */
+
+.profile .profile-container .profile-doc .info .inputs {
+  /* gap: 2%; */
+  display: flex;
+  flex-direction: column;
+
+}
+
+.profile .profile-container .profile-doc .info .inputs .name {
+  gap: 2%;
+  margin: 2% 5.9% 0 20%;
+}
+
+.profile .profile-container .profile-doc .info .inputs .name .l-name {
+  width: 100%;
+  margin: -9.5% 0 0 36%;
+}
+
+.profile .profile-container .profile-doc .info .inputs .special,
+.profile .profile-container .profile-doc .info .inputs .email,
+.profile .profile-container .profile-doc .info .inputs .phone,
+.profile .profile-container .profile-doc .info .inputs .location,
+.profile .profile-container .profile-doc .info .inputs .bio,
+.profile .profile-container .profile-doc .info .inputs .price,
+.profile .profile-container .profile-doc .info .inputs .pass,
+.profile .profile-container .profile-doc .info .inputs .confirm {
+  width: 167%;
+  margin: 2% 0 0 20%;
+}
+
+.profile .profile-container .profile-doc .info .inputs .pass button,
+.profile .profile-container .profile-doc .info .inputs .confirm button {
+  display: flex;
+  position: absolute;
+  margin: -1.8% 0 0 37%;
+  background: none;
+  border: none;
+}
+
+/* Save Button */
+
+.profile .profile-container .profile-doc .save button {
+  width: 48.3%;
+  background-color: var(--Red);
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.3rem;
+  border: none;
+  border-radius: 0.6rem;
+  padding: 1% 0;
+  margin: 2% 0 2% 20%;
+}
+
+.profile .profile-container .profile-doc .save button:hover {
+  cursor: pointer;
+  background-color: var(--secondaryColor);
+  color: var(--Red);
+  border: none;
+}
+
+/* Overlay */
+
+.profile .profile-container .profile-doc .save .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 273vh;
+  background: rgba(18, 22, 25, 0.65);
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
