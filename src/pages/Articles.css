@@ -1,17 +1,37 @@
 
 .articles {
-    display: flex;
-    flex-direction: row;
-    height: 100%;
+  display: flex;
+  flex-direction: row;
+  height: 100%;
 }
 
 .articles .articles-container {
-    height: 100%;
-    min-width: calc(100% - 320px);
-    display: flex;
-    flex-direction: column;
-    padding: 4rem 2.5rem;
-    gap: 2rem;
+  height: 100%;
+  min-width: calc(100% - 320px);
+  display: flex;
+  flex-direction: column;
+  padding: 4rem 2.5rem;
+  gap: 3rem;
+  overflow-y: scroll;
+}
+.articles .articles-container .s1 {
+  color: #393939;
+  opacity: 0.4993;
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.387px;
+}
+.articles .articles-container .s2 {
+  color: var(--Red);
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.387px;
 }
 
 .articles .articles-container h4 {
@@ -23,9 +43,9 @@
 }
 
 .articles .articles-container .article_content {
-    width: 90%;
+    width: 100%;
     display: flex;
-    height: 50%;
+    height: 40%;
     border: 1px solid var(--Red);
     border-radius: 1rem;
     padding: 2%;
@@ -34,14 +54,16 @@
 .articles .articles-container .article_content img {
     width: 25%;
     height: 100%;
+    border-radius: 0.5rem;
 }
 
 .articles .articles-container .article_content p {
     padding-left: 1%;
     color: #1F1F1F;
     text-overflow: ellipsis;
-    white-space: nowrap;
+    white-space: wrap;
     overflow: hidden;
+    overflow-y: scroll;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 400;
@@ -54,5 +76,5 @@
     color: var(--Red);
     border: none;
     font-size: 2rem;
-    margin: 9rem 0 0 2rem;
+    cursor: pointer;
 }
