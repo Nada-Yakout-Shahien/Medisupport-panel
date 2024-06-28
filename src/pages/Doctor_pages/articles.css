@@ -1,0 +1,192 @@
+.articles {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+
+.articles .articles-container {
+  height: 100%;
+  min-width: calc(100% - 320px);
+  display: flex;
+  flex-direction: column;
+  padding: 4rem 2.5rem;
+  gap: 2rem;
+}
+
+.articles .articles-container h4 {
+  color: var(--Red);
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.articles .articles-container .add-button {
+  background: none;
+  color: var(--Red);
+  border: none;
+  font-size: 2rem;
+  margin: -10% 0 0 60%;
+}
+
+.articles .articles-container .add-button:hover {
+  cursor: pointer;
+}
+
+.articles .articles-container .article_content {
+  display: flex;
+  align-items: stretch;
+  border: 1px solid var(--Red);
+  border-radius: 1rem;
+  padding: 2%;
+}
+
+.articles .articles-container .article_content img {
+  max-width: 25%; /* تعديل العرض حسب الحاجة */
+  height: auto; /* للحفاظ على تناسق النسبة */
+}
+
+.articles .articles-container .article_content p {
+  padding-left: 1%;
+  color: #1F1F1F;
+  text-overflow: ellipsis;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2;
+  letter-spacing: 0.428px;
+  max-width: 65%; /* تعديل العرض حسب الحاجة */
+  flex-grow: 1; /* ليمتد النص ليملأ المساحة المتاحة */
+}
+
+.articles .articles-container .article_content .edit-button {
+  background: none;
+  color: var(--Red);
+  border: none;
+  font-size: 2rem;
+  margin: -9rem 0 0 2rem;
+}
+
+.articles .articles-container .article_content .edit-button:hover {
+  cursor: pointer;
+}
+
+.articles .articles-container .article_content .delete-button {
+  background: none;
+  color: var(--Red);
+  border: none;
+  font-size: 2rem;
+  margin: 6rem 0 0 -2rem;
+}
+
+.articles .articles-container .article_content .delete-button:hover {
+  cursor: pointer;
+}
+
+.articles .articles-container .article_content .edit {
+  min-width: calc(90% - 320px);
+  height: 100%;
+  background: rgba(18, 22, 25, 0.65);
+  position: absolute;
+  background-color: white;
+  margin: -12% 0 0 -4%;
+}
+
+.articles .articles-container .article_content .edit h4 {
+  color: var(--Red);
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.articles .articles-container .article_content .edit .edit-content {
+  display: flex;
+  align-items: stretch;
+  border: 1px solid var(--Red);
+  border-radius: 1rem;
+  margin-top: 3%;
+  padding: 2%;
+  flex-direction: column;
+  align-items: flex-start;
+  overflow-y: auto;
+}
+
+.articles .articles-container .article_content .edit .edit-content img {
+  width: 100%; /* تعيين عرض الصورة بالكامل لتغطية حاويتها */
+  height: auto; /* الحفاظ على تناسق النسبة */
+  max-width: 100%; /* ضمان عدم تجاوز الصورة لحاويتها */
+}
+
+.articles .articles-container .article_content .edit .edit-content textarea {
+  display: flex;
+  border: none;
+  margin: 2% 0 0 0;
+  width: 100%;
+  word-wrap: break-word;
+  resize: vertical; /* يسمح بتغيير حجم الـ textarea عمودياً */
+  overflow-y: auto;
+}
+
+.articles .articles-container .article_content .edit .save {
+  width: 39%;
+  background-color: var(--Red);
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.3rem;
+  border: none;
+  border-radius: 0.6rem;
+  padding: 1%;
+  margin: 4% 0 0 30%;
+}
+
+.articles .articles-container .article_content .edit .save:hover {
+  cursor: pointer;
+  background-color: var(--secondaryColor);
+  color: var(--Red);
+  border: none;
+}
+
+.articles .articles-container .add-article-form input {
+  display: flex;
+  width: 40%;
+  height: 2rem;
+  border: 0.12rem solid var(--Red);
+  border-radius: 0.6rem;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.articles .articles-container .add-article-form textarea {
+  display: flex;
+  width: 40%;
+  height: 3rem;
+  border: 0.12rem solid var(--Red);
+  border-radius: 0.6rem;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.articles .articles-container .add-article-form button {
+  width: 39%;
+  background-color: var(--Red);
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.3rem;
+  border: none;
+  border-radius: 0.6rem;
+  padding: 1%;
+  margin: 4% 0 0 30%;
+}
+
+.articles .articles-container .add-article-form button:hover {
+  cursor: pointer;
+  background-color: var(--secondaryColor);
+  color: var(--Red);
+  border: none;
+}
