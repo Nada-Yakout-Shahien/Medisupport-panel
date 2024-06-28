@@ -127,6 +127,7 @@ const Profile = () => {
                 <h4>Edit Info</h4>
                 <div className="inputs">
                   <div className='name'>
+                    <div class="full_name">                      
                     <div className='f-name'>
                       <label>FName</label>
                       <input
@@ -146,7 +147,7 @@ const Profile = () => {
                       />
                     </div>
                   </div>
-
+                  </div>
                   <div className='special'>
                     <label>Specialization</label>
                     <input

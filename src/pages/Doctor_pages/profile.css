@@ -85,12 +85,16 @@
 
 .profile .profile-container .profile-doc .info input {
   display: flex;
-  width: 29%;
+  width: 27%;
   height: 3rem;
   border: 0.12rem solid var(--Red);
   border-radius: 0.6rem;
   padding: 1.4rem;
   margin-top: 1rem;
+}
+
+.profile .profile-container .profile-doc .info .name input{
+  width: 100%;
 }
 
 /* Section Inputs */
@@ -107,9 +111,20 @@
   margin: 2% 5.9% 0 20%;
 }
 
+.full_name {
+  display: flex;
+  gap: 1rem;
+}
+
+
+.profile .profile-container .profile-doc .info .inputs .name .f-name {
+  width: fit-content;
+  /* margin: -9.5% 0 0 36%; */
+}
+
 .profile .profile-container .profile-doc .info .inputs .name .l-name {
-  width: 100%;
-  margin: -9.5% 0 0 36%;
+  width: fit-content;
+  /* margin: -9.5% 0 0 36%; */
 }
 
 .profile .profile-container .profile-doc .info .inputs .special,
